@@ -1,6 +1,6 @@
 .game {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 400px;
 }
 .game img {
   width: 100%;
@@ -13,13 +13,14 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  max-width: 170px;
+  max-width: 270px;
   margin: auto;
   align-self: center;
+  font-size: 2em;
 }
 
 .display {
-  height: 80px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
