@@ -1,0 +1,48 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 170px;
+  margin: auto;
+}
+
+.display {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  line-height: 80px;
+  background: #959c95;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.display.success {
+  background: #488a4b;
+  color: #fff;
+}
+.display.error {
+  background: #7d3434;
+  color: #fff;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.numpad button:first-child {
+  order: 11;
+}
+.numpad button:nth-child(11) {
+  order: 10;
+}
+.numpad button:nth-child(12) {
+  order: 12;
+}
