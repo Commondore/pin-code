@@ -3,7 +3,7 @@ import { addNum, confirm, next, removeNum } from "../store/pin.reducer";
 import { PinStore } from "../store";
 
 const Numpad = () => {
-  const { isAllow, isEnd } = useSelector((store: PinStore) => store);
+  const { isAllow, isEnd, status } = useSelector((store: PinStore) => store);
   const dispatch = useDispatch();
 
   const onNumAdd = (num: number) => {
@@ -35,7 +35,7 @@ const Numpad = () => {
           E
         </button>
       </div>
-      <button className="next" onClick={onNext} disabled={isEnd}>
+      <button className="next" onClick={onNext} disabled={isEnd || !status}>
         {isEnd ? "Больше нет" : "Следующий"}
       </button>
     </>

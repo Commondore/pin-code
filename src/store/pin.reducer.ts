@@ -6,8 +6,12 @@ interface PinType {
 }
 
 const VALID_PIN: PinType[] = [
-  { pin: 1234, image: "rebus.jpg" },
-  { pin: 2222, image: "rebus2.jpg" },
+  { pin: 98, image: "98.jpg" },
+  { pin: 2302, image: "0223.jpg" },
+  { pin: 803, image: "0308.jpg" },
+  { pin: 2103, image: "0321.jpg" },
+  { pin: 905, image: "0509.jpg" },
+  { pin: 3108, image: "0831.jpg" },
 ];
 
 const initialState = {
@@ -44,6 +48,7 @@ const pinSlice = createSlice({
       if (state.pin.length === secretPin(state.index).length) {
         const isValid = state.pin === secretPin(state.index);
 
+        state.isEnd = false;
         state.status = isValid ? "success" : "error";
       }
     },
