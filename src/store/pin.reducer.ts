@@ -12,6 +12,7 @@ const VALID_PIN: PinType[] = [
   { pin: 2103, image: "0321.jpg" },
   { pin: 905, image: "0509.jpg" },
   { pin: 3108, image: "0831.jpg" },
+  { pin: 1966, image: "1966.png" },
 ];
 
 const initialState = {
